@@ -28,4 +28,30 @@ body {
   line-height: 1.5;
   max-width: 112.5em;
   margin: 0 auto;
+  color: var(--color-black-light);
 }
+
+/* header stylings */
+.header-contacts {
+  display: flex;
+  justify-content: space-around;
+  padding: 0.5rem 0;
+}
+
+.header-contact {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.header-contact i,
+.header-contacts-text {
+  font-size: 1.4rem;
+}
+
+@media screen and (max-width: 43.75em) {
+  .header-contacts {
+    display: none;
+  }
+}
+/* end of header stylings */
