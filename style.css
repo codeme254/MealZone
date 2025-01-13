@@ -1,0 +1,31 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-font: "Open Sans", serif;
+  --secondary-font: "Great Vibes", serif;
+  --color-primary: #c8a97e;
+  --color-white: #ffffff;
+  --color-white-light: #fafafa;
+  --color-grey-light: #b7b1ad;
+  --color-black: #000000;
+  --color-black-dark: #333333;
+  --color-black-light: #717171;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: var(--primary-font);
+  line-height: 1.5;
+  max-width: 112.5em;
+  margin: 0 auto;
+}
