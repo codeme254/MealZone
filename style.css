@@ -601,11 +601,18 @@ body {
   padding: 1rem;
   font-family: inherit;
   font-size: 1.5rem;
+  border: none;
+  outline: 1px solid var(--color-primary);
+}
+
+.form-group-input:focus {
+  border: none;
+  outline: 1px solid var(--color-primary);
 }
 
 .form-group-input::placeholder {
   text-transform: capitalize;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .reservations-btn {
