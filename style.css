@@ -96,10 +96,23 @@ body {
   width: 100%;
 }
 
+.header-visible {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100;
+  z-index: 100000000;
+  background-color: var(--color-white);
+}
+
 .header-contacts {
   display: flex;
   justify-content: space-between;
   padding: 0.5rem 3rem;
+}
+
+.header-visible .header-contacts {
+  display: none;
 }
 
 .header-contact {
@@ -127,10 +140,18 @@ body {
   padding: 1.5rem 3rem;
 }
 
+.header-visible .header-navigation {
+  padding: 0 3rem;
+}
+
 .logo {
   font-size: 2rem;
   /* color: var(--color-black); */
   color: var(--color-white);
+}
+
+.header-visible .logo {
+  color: var(--color-black);
 }
 
 .header-nav-list {
@@ -150,6 +171,11 @@ body {
   color: var(--color-white);
 }
 
+.header-visible .header-nav-item a:visited,
+.header-visible .header-nav-item a:link {
+  color: var(--color-black);
+}
+
 .header-nav-item--active a:visited,
 .header-nav-item--active a:link {
   color: var(--color-primary);
@@ -158,6 +184,10 @@ body {
 
 .header-nav-item--active a:hover {
   color: var(--color-white);
+}
+
+.header-visible .header-cta {
+  border-radius: 0;
 }
 
 .toggle-menu-btn {
@@ -353,3 +383,91 @@ body {
   text-align: center;
 }
 /* end of the services section */
+
+/* menu section stylings */
+.menu-section {
+  padding: 10rem 3rem;
+  max-width: 68.75em;
+  margin: 0 auto;
+}
+
+.menu-container {
+  margin-top: 5rem;
+}
+
+.menu-items-row,
+.menu-items-row-reverse {
+  display: flex;
+}
+
+@media screen and (max-width: 62.5em) {
+  .menu-items-row,
+  .menu-items-row-reverse {
+    flex-direction: column;
+  }
+}
+
+.menu-items-row-reverse .menu-item {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.menu-item {
+  display: flex;
+}
+
+.menu-item-img-container,
+.menu-item-details {
+  width: 50%;
+}
+
+@media screen and (max-width: 31.25em) {
+  .menu-item,
+  .menu-items-row-reverse .menu-item {
+    flex-direction: column;
+  }
+
+  .menu-item-img-container,
+  .menu-item-details {
+    width: 100%;
+  }
+}
+
+.menu-item-img-container img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.menu-item-details {
+  border: 1px solid var(--color-grey-light);
+  padding: 1.5rem;
+}
+
+.menu-item-title-price {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.menu-item-title {
+  color: var(--color-black-dark);
+}
+
+.menu-item-price {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--color-primary);
+}
+
+.menu-item-description {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.menu-item-btn {
+  padding: 1rem 2rem;
+  border-radius: 1px;
+}
+/* end of menu section stylings */
