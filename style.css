@@ -88,6 +88,14 @@ body {
 }
 /* end of reusable components styles */
 
+/* utility classes */
+.u-title-md .title--sub {
+  font-size: 6rem;
+  top: -3rem;
+  font-weight: 700;
+}
+/* end of utility classes */
+
 /* header stylings */
 .header {
   position: absolute;
@@ -522,3 +530,87 @@ body {
   margin-right: 1rem;
 }
 /* end of chef section stylings */
+
+/* reservation section */
+.reservation-section {
+  margin-top: 15rem;
+  background: url(./images/reservation-bg.jpg);
+  background-size: cover;
+  background-position: bottom;
+  background-attachment: fixed;
+  padding: 5rem;
+}
+
+@media screen and (max-width: 43.75em) {
+  .reservation-section {
+    padding: 5rem 1rem;
+  }
+}
+
+.reservation-form {
+  width: 65rem;
+  background-color: var(--color-white);
+}
+
+@media screen and (max-width: 50em) {
+  .reservation-form {
+    width: 98%;
+    margin: 0 auto;
+  }
+}
+
+.form-controls {
+  display: grid;
+  grid-template-columns: 0.5fr 0.5fr;
+  column-gap: 2rem;
+  row-gap: 3rem;
+  margin-bottom: 3rem;
+}
+
+@media screen and (max-width: 43.75em) {
+  .form-controls {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.form-elements-wrapper {
+  padding: 5rem;
+}
+
+@media screen and (max-width: 31.25em) {
+  .form-elements-wrapper {
+    padding: 5rem 1rem;
+  }
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-group-label {
+  font-weight: 700;
+  font-family: inherit;
+  text-transform: capitalize;
+  color: var(--color-black-dark);
+}
+
+.form-group-input {
+  padding: 1rem;
+  font-family: inherit;
+  font-size: 1.5rem;
+}
+
+.form-group-input::placeholder {
+  text-transform: capitalize;
+  font-weight: 600;
+}
+
+.reservations-btn {
+  display: block;
+  margin: 0 auto;
+  padding: 2rem 4rem;
+}
+/* end of reservation section */
