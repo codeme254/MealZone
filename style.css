@@ -622,6 +622,66 @@ body {
 }
 /* end of reservation section */
 
+/* testimonies section */
+.testimonies {
+  margin-top: 15rem;
+  margin-bottom: 15rem;
+  margin-block: 15rem;
+  padding: 0 3rem;
+}
+
+.testimonies-container {
+  margin-top: 5rem;
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+
+.testimony {
+  width: 30rem;
+}
+
+.headshot-wrapper {
+  --size: 15rem;
+  width: var(--size);
+  height: var(--size);
+  margin: 0 auto;
+}
+
+.headshot-wrapper img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.customer-testimony {
+  text-align: center;
+  margin: 2rem 0;
+  margin-block: 2rem;
+  line-height: 2;
+}
+
+.customer--name {
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 2rem;
+  color: var(--color-black);
+  font-weight: 500;
+  margin-bottom: 1rem;
+  margin-block-end: 1rem;
+}
+
+.customer--position {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+/* end of testimonies section */
+
 /* footer stylings */
 .footer {
   background-color: var(--color-black);
