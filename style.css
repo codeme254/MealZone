@@ -621,3 +621,146 @@ body {
   padding: 2rem 4rem;
 }
 /* end of reservation section */
+
+/* footer stylings */
+.footer {
+  background-color: var(--color-black);
+  padding: 5rem;
+  display: flex;
+  gap: 1rem;
+}
+
+@media screen and (max-width: 62.5em) {
+  .footer {
+    padding: 5rem 1rem;
+  }
+}
+
+@media screen and (max-width: 53.125em) {
+  .footer {
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 4rem;
+    column-gap: 2rem;
+  }
+}
+
+.footer-col {
+  width: 25%;
+}
+
+@media screen and (max-width: 53.125em) {
+  .footer-col {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 31.25em) {
+  .footer-col {
+    width: 100%;
+  }
+}
+
+.footer-heading {
+  color: var(--color-white);
+  text-transform: capitalize;
+  font-size: 1.8rem;
+  margin-bottom: 3rem;
+}
+
+.footer-text {
+  font-size: 1.4rem;
+  color: var(--color-grey-light);
+  line-height: 1.8;
+}
+
+.footer-socials {
+  margin-top: 1rem;
+}
+
+.footer-social,
+.footer-social:visited {
+  color: var(--color-white);
+  text-decoration: none;
+  --size: 4rem;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: var(--size);
+  height: var(--size);
+  background-color: var(--color-black-dark);
+  border-radius: 50%;
+  margin-right: 0.5rem;
+}
+
+.footer-social i {
+  font-size: 2rem;
+}
+
+.opening-hour-text {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+  margin-right: 1rem;
+}
+
+.footer-gallery-grid {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer-gallery-item {
+  display: block;
+  --size: 8rem;
+  width: var(--size);
+  height: var(--size);
+  background-size: cover !important;
+  background-position: top !important;
+}
+
+.footer-gallery-item:nth-child(1) {
+  background: url(./images/ig-1.jpg);
+}
+
+.footer-gallery-item:nth-child(2) {
+  background: url(./images/ig-2.jpg);
+}
+
+.footer-gallery-item:nth-child(3) {
+  background: url(./images/ig-3.jpg);
+}
+
+.footer-gallery-item:nth-child(4) {
+  background: url(./images/ig-4.jpg);
+}
+
+.footer-gallery-item:nth-child(5) {
+  background: url(./images/ig-5.jpg);
+}
+
+.footer-gallery-item:nth-child(6) {
+  background: url(./images/ig-6.jpg);
+}
+
+.newsletter-form {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.newsletter-form-input {
+  border: none;
+  outline: none;
+  font-family: inherit;
+  padding: 1.5rem 2.5rem;
+  margin-bottom: 0.5rem;
+  text-align: center;
+  background-color: var(--color-black-dark);
+}
+
+.newsletter-form-input::placeholder {
+  text-transform: capitalize;
+  color: var(--color-grey-light);
+  font-weight: 600;
+}
+/* end of footer stylings */
