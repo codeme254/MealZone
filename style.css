@@ -16,6 +16,12 @@
   --color-black: #000000;
   --color-black-dark: #333333;
   --color-black-light: #717171;
+  scroll-behavior: smooth;
+}
+
+::selection {
+  background-color: var(--color-primary);
+  color: var(--color-white-light);
 }
 
 html {

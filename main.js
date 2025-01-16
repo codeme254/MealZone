@@ -24,3 +24,11 @@ const heroSectionObserver = new IntersectionObserver(
 );
 
 heroSectionObserver.observe(hero);
+
+// scroll the reservation section into view
+const reservationCtaButton = document.getElementById("reservation-cta");
+const reservationSection = document.getElementById("reservation-section");
+
+reservationCtaButton.addEventListener("click", () => {
+  reservationSection.scrollIntoView({ behavior: "smooth" });
+});
