@@ -822,6 +822,7 @@ body {
   margin-bottom: 0.5rem;
   text-align: center;
   background-color: var(--color-black-dark);
+  color: var(--color-white-light);
 }
 
 .newsletter-form-input::placeholder {

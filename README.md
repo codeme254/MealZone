@@ -1,7 +1,7 @@
 # MealZone
 Restuarant page (for my students) built in HTML, CSS and JavaScript.
 
-![preview](./images/preview-1.png)
+![preview](./images/website-preview.png)
 
 ## Getting started
 - Clone this repo: `git clone [repo-url]`
